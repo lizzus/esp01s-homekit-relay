@@ -21,9 +21,9 @@
  *
  */
 
-#define DEVICE_MANUFACTURER "itead"
-#define DEVICE_NAME "Sonoff"
-#define DEVICE_MODEL "Basic"
+#define DEVICE_MANUFACTURER "lizzus"
+#define DEVICE_NAME "ESP"
+#define DEVICE_MODEL "ESP01S"
 #define DEVICE_SERIAL "12345678"
 #define FW_VERSION "1.0"
 
@@ -58,11 +58,11 @@ homekit_characteristic_t revision     = HOMEKIT_CHARACTERISTIC_(FIRMWARE_REVISIO
 
 
 // The GPIO pin that is connected to the relay on the Sonoff Basic.
-const int relay_gpio = 12;
+const int relay_gpio = 0;
 // The GPIO pin that is connected to the LED on the Sonoff Basic.
 const int LED_GPIO = 13;
 // The GPIO pin that is oconnected to the button on the Sonoff Basic.
-const int button_gpio = 0;
+const int button_gpio = 2;
 
 void switch_on_callback(homekit_characteristic_t *_ch, homekit_value_t on, void *context);
 void button_callback(uint8_t gpio, button_event_t event);
