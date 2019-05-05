@@ -58,11 +58,11 @@ homekit_characteristic_t revision     = HOMEKIT_CHARACTERISTIC_(FIRMWARE_REVISIO
 
 
 // The GPIO pin that is connected to the relay on the Sonoff Basic.
-const int relay_gpio = 0;
+const int relay_gpio = 3;
 // The GPIO pin that is connected to the LED on the Sonoff Basic.
-const int LED_GPIO = 13;
+const int LED_GPIO = 2;
 // The GPIO pin that is oconnected to the button on the Sonoff Basic.
-const int button_gpio = 2;
+const int button_gpio = 0;
 
 void switch_on_callback(homekit_characteristic_t *_ch, homekit_value_t on, void *context);
 void button_callback(uint8_t gpio, button_event_t event);
